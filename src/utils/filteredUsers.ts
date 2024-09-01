@@ -14,7 +14,7 @@ export const filteredUsers = (users: User[], searchTerms: SearchTerms): User[] =
       name.toLowerCase().includes(searchTerms.name.toLowerCase()) &&
       username.toLowerCase().includes(searchTerms.username.toLowerCase()) &&
       email.toLowerCase().includes(searchTerms.email.toLowerCase()) &&
-      phone.toLowerCase().includes(searchTerms.phone))
+      phone.includes(searchTerms.phone))
     }
   );
 };
