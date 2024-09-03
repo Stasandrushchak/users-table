@@ -1,7 +1,3 @@
-import { UsersTable } from "./components/UsersTable"
+import { UsersTable } from './components/UsersTable';
 
-export const App: React.FC = () => {
-  return (
-    <UsersTable/>
-  )
-}
+export const App: React.FC = () => <UsersTable />;
