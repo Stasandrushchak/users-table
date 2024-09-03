@@ -8,6 +8,7 @@ import { filteredUsers } from '../utils/filterUsers';
 import { User } from '../types/User';
 import cn from 'classnames';
 import { BallTriangle } from 'react-loader-spinner';
+import './UsersTable.css'
 
 export const UsersTable: React.FC = () => {
   const dispatch: AppDispatch = useDispatch();
@@ -30,16 +31,15 @@ export const UsersTable: React.FC = () => {
   }, [dispatch, status]);
 
   if (status === 'loading') {
-    return <BallTriangle
+    return ( <div className='loader-container'><BallTriangle
       height={100}
       width={100}
-      radius={100}
       color="#4fa94d"
       ariaLabel="ball-triangle-loading"
       wrapperStyle={{}}
       wrapperClass=""
       visible={true}
-    />;
+    /></div>);
   }
 
   if (status === 'failed') {
