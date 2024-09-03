@@ -2,7 +2,7 @@
 
 Demo Link: 
 
-- users-table-brown.vercel.app
+- [DEMO](https://users-table-brown.vercel.app/)
 
 Technologies that were used: 
 
